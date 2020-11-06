@@ -8,7 +8,6 @@ hive
 
 ```sql
 CREATE TABLE source_table_1_managed
-    STORED AS ORC
 AS select * from source_table_1 
 ```
 
@@ -31,8 +30,6 @@ CREATE EXTERNAL TABLE source_table_1_orc
     STORED AS ORC
 AS select * from source_table_1 
 ```
-
-
 
 ## 03. Merge partitions
 
