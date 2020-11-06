@@ -1,7 +1,7 @@
 # hive_tuning
-hive
 
-
+hive work flow
+![Hive work flow](workflow/DataETL.png)
 
 
 ## 01. Convert the CDP unmanaged table into managed table
