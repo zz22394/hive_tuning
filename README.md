@@ -3,8 +3,18 @@
 hive work flow
 ![Hive work flow](workflow/DataETL.png)
 
+## 00. Table status list up
+List up status for all the 400 tables in CATS project.
 
-## 01. Convert the CDP unmanaged table into managed table
+* table name
+* location (s3 path)
+* Store type (TXT / ORC)
+* partition used
+* partition number
+* count(*)
+
+
+## 11. Convert the CDP unmanaged table into managed table
 
 Goal: improve count(*) / aggreation functions' performance
 
@@ -13,7 +23,7 @@ CREATE TABLE source_table_1_managed
 AS select * from source_table_1 
 ```
 
-## 02. Convert the small files/text files into ORC files
+## 12. Convert the small files/text files into ORC files
 
 ### Original table is managed table:
 
@@ -31,7 +41,7 @@ CREATE EXTERNAL TABLE source_table_1_orc
 AS select * from source_table_1 
 ```
 
-## 03. Merge partitions
+## 13. Merge partitions
 
 ### Original table is managed table:
 
