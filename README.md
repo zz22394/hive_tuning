@@ -11,7 +11,8 @@ List up status for all the 400 tables in CATS project.
 * Store type (TXT / ORC)
 * partition used
 * partition number
-* if or not in the list of (Tables with Paritioning Issues)
+* if or not in the list of (Tables with too many Paritions)
+* if or not managed table
 * count(*)
 
 
